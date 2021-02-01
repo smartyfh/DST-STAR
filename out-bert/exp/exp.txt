@@ -1,0 +1,84 @@
+Namespace(attn_head=4, attn_type='softmax', data_dir='data/mwz2.1', dec_lr=0.0001, dec_warmup=0.1, distance_metric='euclidean', dropout_prob=0.1, enc_lr=4e-05, enc_warmup=0.1, eval_epoch=1, eval_step=10000, max_seq_length=512, n_epochs=12, num_history=20, num_self_attention_layer=6, num_workers=4, patience=8, pretrained_model='bert-base-uncased', random_seed=42, save_dir='out-bert/exp', train_batch_size=16, word_dropout=0.1)
+device: cuda
+['attraction-area', 'attraction-name', 'attraction-type', 'hotel-area', 'hotel-book day', 'hotel-book people', 'hotel-book stay', 'hotel-internet', 'hotel-name', 'hotel-parking', 'hotel-pricerange', 'hotel-stars', 'hotel-type', 'restaurant-area', 'restaurant-book day', 'restaurant-book people', 'restaurant-book time', 'restaurant-food', 'restaurant-name', 'restaurant-pricerange', 'taxi-arriveby', 'taxi-departure', 'taxi-destination', 'taxi-leaveat', 'train-arriveby', 'train-book people', 'train-day', 'train-departure', 'train-destination', 'train-leaveat']
+Data loaded!
+***** Run training *****
+ Num examples = 54984
+ Batch size = 16
+ Num steps = 41238
+[[0, 8], [8, 160], [160, 187], [187, 195], [195, 209], [209, 218], [218, 229], [229, 233], [233, 311], [311, 315], [315, 324], [324, 334], [334, 339], [339, 347], [347, 358], [358, 368], [368, 438], [438, 547], [547, 719], [719, 725], [725, 822], [822, 1075], [1075, 1326], [1326, 1434], [1434, 1591], [1591, 1604], [1604, 1613], [1613, 1637], [1637, 1659], [1659, 1860]]
+AdamW (
+Parameter Group 0
+    betas: (0.9, 0.999)
+    correct_bias: True
+    eps: 1e-06
+    initial_lr: 4e-05
+    lr: 0.0
+    weight_decay: 0.01
+
+Parameter Group 1
+    betas: (0.9, 0.999)
+    correct_bias: True
+    eps: 1e-06
+    initial_lr: 4e-05
+    lr: 0.0
+    weight_decay: 0.0
+)
+AdamW (
+Parameter Group 0
+    betas: (0.9, 0.999)
+    correct_bias: True
+    eps: 1e-06
+    initial_lr: 0.0001
+    lr: 0.0
+    weight_decay: 0.0
+)
+Training...
+*** Epoch=0, Last Update=0, Dev Loss=16.887379, Dev Acc=0.220730, Dev Turn Acc=0.575634, Best Loss=16.887379, Best Acc=0.220730 ***
+*** Epoch=0, Last Update=0, Tes Loss=17.697162, Tes Acc=0.210233, Tes Turn Acc=0.557818, Best Loss=16.887379, Best Acc=0.220730 ***
+*** Epoch=1, Last Update=1, Dev Loss=10.717365, Dev Acc=0.348935, Dev Turn Acc=0.673857, Best Loss=10.717365, Best Acc=0.348935 ***
+*** Epoch=1, Last Update=1, Tes Loss=11.586438, Tes Acc=0.339169, Tes Turn Acc=0.669110, Best Loss=10.717365, Best Acc=0.348935 ***
+*** Epoch=2, Last Update=2, Dev Loss=9.882110, Dev Acc=0.471171, Dev Turn Acc=0.745082, Best Loss=9.882110, Best Acc=0.471171 ***
+*** Epoch=2, Last Update=2, Tes Loss=10.516630, Tes Acc=0.451547, Tes Turn Acc=0.742807, Best Loss=9.882110, Best Acc=0.471171 ***
+*** Epoch=3, Last Update=3, Dev Loss=9.132838, Dev Acc=0.523674, Dev Turn Acc=0.781712, Best Loss=9.132838, Best Acc=0.523674 ***
+*** Epoch=3, Last Update=3, Tes Loss=9.697362, Tes Acc=0.494707, Tes Turn Acc=0.775109, Best Loss=9.132838, Best Acc=0.523674 ***
+*** Epoch=4, Last Update=4, Dev Loss=8.962180, Dev Acc=0.545381, Dev Turn Acc=0.796093, Best Loss=8.962180, Best Acc=0.545381 ***
+*** Epoch=4, Last Update=4, Tes Loss=9.708258, Tes Acc=0.520630, Tes Turn Acc=0.783523, Best Loss=8.962180, Best Acc=0.545381 ***
+*** Epoch=5, Last Update=4, Dev Loss=8.788912, Dev Acc=0.545245, Dev Turn Acc=0.794736, Best Loss=8.788912, Best Acc=0.545381 ***
+*** Epoch=5, Last Update=4, Tes Loss=9.437626, Tes Acc=0.527552, Tes Turn Acc=0.780809, Best Loss=8.788912, Best Acc=0.545381 ***
+*** Epoch=6, Last Update=6, Dev Loss=8.685273, Dev Acc=0.564103, Dev Turn Acc=0.804368, Best Loss=8.685273, Best Acc=0.564103 ***
+*** Epoch=6, Last Update=6, Tes Loss=9.455186, Tes Acc=0.533252, Tes Turn Acc=0.788952, Best Loss=8.685273, Best Acc=0.564103 ***
+*** Epoch=7, Last Update=6, Dev Loss=8.595844, Dev Acc=0.560440, Dev Turn Acc=0.799213, Best Loss=8.595844, Best Acc=0.564103 ***
+*** Epoch=7, Last Update=6, Tes Loss=9.020981, Tes Acc=0.544788, Tes Turn Acc=0.795738, Best Loss=8.595844, Best Acc=0.564103 ***
+*** Epoch=8, Last Update=8, Dev Loss=8.467050, Dev Acc=0.571429, Dev Turn Acc=0.803826, Best Loss=8.467050, Best Acc=0.571429 ***
+*** Epoch=8, Last Update=8, Tes Loss=9.049973, Tes Acc=0.550081, Tes Turn Acc=0.795603, Best Loss=8.467050, Best Acc=0.571429 ***
+*** Epoch=9, Last Update=9, Dev Loss=8.391603, Dev Acc=0.574413, Dev Turn Acc=0.807082, Best Loss=8.391603, Best Acc=0.574413 ***
+*** Epoch=9, Last Update=9, Tes Loss=9.059439, Tes Acc=0.554967, Tes Turn Acc=0.797774, Best Loss=8.391603, Best Acc=0.574413 ***
+*** Epoch=10, Last Update=10, Dev Loss=8.456067, Dev Acc=0.577262, Dev Turn Acc=0.809659, Best Loss=8.391603, Best Acc=0.577262 ***
+*** Epoch=10, Last Update=10, Tes Loss=9.001228, Tes Acc=0.566640, Tes Turn Acc=0.801303, Best Loss=8.391603, Best Acc=0.577262 ***
+*** Epoch=11, Last Update=10, Dev Loss=8.486793, Dev Acc=0.576584, Dev Turn Acc=0.808981, Best Loss=8.391603, Best Acc=0.577262 ***
+*** Epoch=11, Last Update=10, Tes Loss=9.133001, Tes Acc=0.557953, Tes Turn Acc=0.798317, Best Loss=8.391603, Best Acc=0.577262 ***
+Results based on best loss: 
+{'epoch': 0, 'loss': 9.059439052749793, 'joint_acc': 0.5549674267100977, 'joint_turn_acc': 0.7977741585233442, 'slot_acc': array([0.97679153, 0.94068947, 0.96579805, 0.95901194, 0.99389251,
+       0.99389251, 0.99484256, 0.96525516, 0.94910423, 0.97570575,
+       0.97461998, 0.98289902, 0.93281759, 0.97489142, 0.99375679,
+       0.9932139 , 0.99307818, 0.97801303, 0.94177524, 0.97570575,
+       0.9919924 , 0.98235613, 0.98384908, 0.98805646, 0.96824104,
+       0.97760586, 0.99619978, 0.9895494 , 0.98629207, 0.93838219]), 'ave_slot_acc': 0.9752759681505608, 'final_joint_acc': 0.4014014014014014, 'final_slot_acc': array([0.96996997, 0.8998999 , 0.96096096, 0.94994995, 0.99499499,
+       0.99399399, 0.995996  , 0.95695696, 0.91091091, 0.96896897,
+       0.96896897, 0.97397397, 0.92892893, 0.96396396, 0.99199199,
+       0.99299299, 0.99199199, 0.97397397, 0.9039039 , 0.96996997,
+       0.98098098, 0.97497497, 0.96996997, 0.97297297, 0.94894895,
+       0.95795796, 0.99499499, 0.98698699, 0.98498498, 0.9009009 ]), 'final_ave_slot_acc': 0.9645645645645646}
+Results based on best acc: 
+{'epoch': 1, 'loss': 9.001227641856373, 'joint_acc': 0.5666395222584147, 'joint_turn_acc': 0.8013029315960912, 'slot_acc': array([0.9759772 , 0.94245385, 0.96701954, 0.95833333, 0.99402823,
+       0.99389251, 0.99362106, 0.96783388, 0.9495114 , 0.9771987 ,
+       0.97204126, 0.98452769, 0.94191097, 0.97543431, 0.99307818,
+       0.99362106, 0.99362106, 0.97814875, 0.93281759, 0.97448426,
+       0.99253529, 0.98425624, 0.98737785, 0.98764929, 0.96891965,
+       0.97950597, 0.99674267, 0.98859935, 0.98737785, 0.94245385]), 'ave_slot_acc': 0.9758324285197248, 'final_joint_acc': 0.4094094094094094, 'final_slot_acc': array([0.96896897, 0.8988989 , 0.96196196, 0.94894895, 0.99499499,
+       0.99499499, 0.99499499, 0.95895896, 0.91491491, 0.97197197,
+       0.96596597, 0.97697698, 0.93593594, 0.96496496, 0.99299299,
+       0.99399399, 0.99299299, 0.97397397, 0.89289289, 0.96796797,
+       0.98298298, 0.97397397, 0.97497497, 0.97097097, 0.94894895,
+       0.96296296, 0.996997  , 0.98498498, 0.98598599, 0.9049049 ]), 'final_ave_slot_acc': 0.9651985318651988}
