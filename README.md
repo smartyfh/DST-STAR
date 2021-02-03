@@ -11,7 +11,7 @@ An indispensable component in task-oriented dialogue systems is the dialogue sta
   <img src="models/STAR_framework.png" width="70%" />
 </p>
 
-<p align="center"> The model architecture of STAR</p>
+<p align="center">The model architecture of STAR</p>
 
 ## Usage
 ### Data Preprocessing
@@ -33,3 +33,6 @@ An indispensable component in task-oriented dialogue systems is the dialogue sta
 ```console
 ❱❱❱ python3 evaluation.py
 ```
+
+If you don't want to re-train the model from scracth, you can download the saved model_dict from [here](https://drive.google.com/file/d/1Bz86HK4ebLqWlg4bd6voGv5TlT0x2qT6/view?usp=sharing). 
+
