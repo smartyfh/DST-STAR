@@ -21,3 +21,15 @@ An indispensable component in task-oriented dialogue systems is the dialogue sta
 ❱❱❱ python3 preprocess_data.py
 ❱❱❱ python3 convert_by_turn.py
 ```
+
+### Training
+
+```console
+❱❱❱ python3 train_STAR.py
+```
+
+### Evaluation
+
+```console
+❱❱❱ python3 evaluation.py
+```
