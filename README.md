@@ -36,3 +36,16 @@ An indispensable component in task-oriented dialogue systems is the dialogue sta
 
 If you don't want to re-train the model from scratch, you can download the saved model_dict from [here](https://drive.google.com/file/d/1Bz86HK4ebLqWlg4bd6voGv5TlT0x2qT6/view?usp=sharing). 
 
+## Citation
+
+```bibtex
+@inproceedings{ye2021star,
+  title={Slot Self-Attentive Dialogue State Tracking},
+  author={Ye Fanghua, Manotumruksa Jarana, Zhang Qiang, Li Shenghui, Yilmaz Emine},
+  booktitle={The Web Conference (WWW)},
+  year={2021}
+```
+
+## Contact
+
+If there are any questions, feel free to contact me at smartyfh@outlook.com.
