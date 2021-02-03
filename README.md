@@ -13,6 +13,12 @@ An indispensable component in task-oriented dialogue systems is the dialogue sta
 
 <p align="center">The model architecture of STAR</p>
 
+## Requirements
+
++ Pytorch >= 1.6.0
++ Transformers >= 3.1.0 
+
+
 ## Usage
 ### Data Preprocessing
 
