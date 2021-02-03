@@ -34,5 +34,5 @@ An indispensable component in task-oriented dialogue systems is the dialogue sta
 ❱❱❱ python3 evaluation.py
 ```
 
-If you don't want to re-train the model from scracth, you can download the saved model_dict from [here](https://drive.google.com/file/d/1Bz86HK4ebLqWlg4bd6voGv5TlT0x2qT6/view?usp=sharing). 
+If you don't want to re-train the model from scratch, you can download the saved model_dict from [here](https://drive.google.com/file/d/1Bz86HK4ebLqWlg4bd6voGv5TlT0x2qT6/view?usp=sharing). 
 
