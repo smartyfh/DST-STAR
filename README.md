@@ -7,3 +7,17 @@ An indispensable component in task-oriented dialogue systems is the dialogue sta
 
 ## Model 
 
+<p align="center">
+  <img src="models/STAR_framework.png" width="70%" />
+</p>
+
+<p align="center"> The model architecture of STAR</p>
+
+## Usage
+### Data Preprocessing
+
+```console
+❱❱❱ python3 create_data.py
+❱❱❱ python3 preprocess_data.py
+❱❱❱ python3 convert_by_turn.py
+```
