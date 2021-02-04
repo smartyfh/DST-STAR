@@ -50,6 +50,7 @@ If you don't want to re-train the model from scratch, you can download the saved
   author={Ye Fanghua, Manotumruksa Jarana, Zhang Qiang, Li Shenghui, Yilmaz Emine},
   booktitle={The Web Conference (WWW)},
   year={2021}
+  }
 ```
 
 ## Contact
