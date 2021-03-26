@@ -99,7 +99,6 @@ if __name__ == "__main__":
     
     parser.add_argument("--num_self_attention_layer", default=6, type=int)
     
-    # tune on test set
     args = parser.parse_args()
     
     print('pytorch version: ', torch.__version__)
